@@ -1,0 +1,30 @@
+.indent {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.small-margin {
+  margin: 10px 0;
+}
+
+.medium-margin {
+  margin: 25px 0;
+}
+
+.large-margin {
+  margin: 60px 0;
+}

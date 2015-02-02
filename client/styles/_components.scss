@@ -1,0 +1,23 @@
+.magnify-text {
+  transition: 0.5s;
+  border-radius: 5px;
+  padding: 5px;
+  &:hover {
+    background-color: $grey;
+    color: $pink;
+  }
+}
+
+.depth {
+    display: block;
+    position: relative;
+}
+
+.depth:before, .depth:after {
+    content: attr(title);
+    color: rgba(225,225,225,.1);
+    position: absolute;
+}
+
+.depth:before { top: 1px; left: 1px }
+.depth:after  { top: 2px; left: 2px }
