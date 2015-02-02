@@ -27,7 +27,7 @@ gulp.task('sass', function() {
 gulp.task('inject', function() {
   return gulp.src('index.html')
   .pipe(inject(gulp.src(bowerFiles(), {read: false}), {name: 'bower'}))
-  .pipe(inject(gulp.src(['./client/app/*.js', './client/app/**/*.js'])))
+  .pipe(inject(gulp.src(['./client/app/*.js', './client/components/**/*.js', './client/app/**/*.js'])))
   .pipe(gulp.dest('./'));
 });
 
