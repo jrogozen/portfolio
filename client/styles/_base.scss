@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5 {
 h1, h2 {
   font-weight: bold;
   letter-spacing: -3px;
+
+  small {
+    letter-spacing: 0;
+    font-weight: normal;
+    font-size: 14px;
+  }
 }
 
 blockquote {

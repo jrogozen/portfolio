@@ -1,10 +1,4 @@
 app.controller('aboutCtrl', ['$scope', function($scope) {
-// javascript
-// ruby
-// databases
-// taskbuilders
-// styles
-// contact
 
 var blocks = [
   {

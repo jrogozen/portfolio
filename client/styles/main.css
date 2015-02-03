@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5 {
 h1, h2 {
   font-weight: bold;
   letter-spacing: -3px; }
+  h1 small, h2 small {
+    letter-spacing: 0;
+    font-weight: normal;
+    font-size: 14px; }
 
 blockquote {
   font-family: 'Merriweather', serif;
@@ -53,6 +57,36 @@ a {
   .grid-list-block:hover {
     background: #f6f5f2; }
 
+.grid-list-block-images {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  height: 250px; }
+  .grid-list-block-images .block-background {
+    background-size: 100% !important;
+    width: 100%;
+    height: 250px; }
+  .grid-list-block-images .overlay {
+    opacity: 0;
+    z-index: 10;
+    margin: 0 auto;
+    color: white;
+    background: black;
+    padding: 10px;
+    transition: 0.5s; }
+    .grid-list-block-images .overlay h2, .grid-list-block-images .overlay p {
+      text-align: center; }
+    .grid-list-block-images .overlay h2 {
+      font-size: 18px;
+      letter-spacing: 0; }
+    .grid-list-block-images .overlay p {
+      font-size: 12px; }
+  .grid-list-block-images:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); }
+    .grid-list-block-images:hover .overlay {
+      opacity: 1; }
+
 .small-margin {
   margin: 10px 0; }
 
@@ -95,7 +129,7 @@ a {
     content: "";
     display: block;
     position: absolute;
-    z-index: -1;
+    z-index: 10;
     bottom: -2px;
     left: 0;
     right: 0;
@@ -108,6 +142,9 @@ a {
   transition: 0.5s; }
   .list-title:hover {
     color: #ff6b6b; }
+
+.panel-colored {
+  background: #f6f5f2; }
 
 #header-main {
   background-image: url("../../static/images/header_background.jpeg");
