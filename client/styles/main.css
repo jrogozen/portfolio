@@ -87,6 +87,10 @@ a {
     .grid-list-block-images:hover .overlay {
       opacity: 1; }
 
+@media (max-width: 992px) {
+  .portfolio-single-content {
+    margin-top: 20px; } }
+
 .small-margin {
   margin: 10px 0; }
 
@@ -184,7 +188,7 @@ a {
   font-size: 18px; }
 
 .social-links {
-  margin-top: 40px; }
+  margin: 40px 0; }
 
 .global-nav a:link {
   color: white; }
