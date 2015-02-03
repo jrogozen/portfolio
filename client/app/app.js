@@ -1,5 +1,6 @@
 var app = angular.module('portfolio', [
-  'ui.router'
+  'ui.router',
+  'duScroll'
 ]);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {

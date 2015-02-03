@@ -146,6 +146,21 @@ a {
 .panel-colored {
   background: #f6f5f2; }
 
+.img-full {
+  width: 100%;
+  height: auto; }
+
+.hover-gray {
+  transition: 0.5s; }
+  .hover-gray:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); }
+
+.reverse-link {
+  color: #ff6b6b; }
+  .reverse-link:hover {
+    color: white; }
+
 #header-main {
   background-image: url("../../static/images/header_background.jpeg");
   background-size: cover;
@@ -155,7 +170,8 @@ a {
 .header-intro {
   font-family: 'Merriweather', serif;
   font-size: 48px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #ff6b6b; }
 
 .header-lead {
   font-family: 'Merriweather', serif;
@@ -166,3 +182,11 @@ a {
 .header-nav {
   font-style: italic;
   font-size: 18px; }
+
+.social-links {
+  margin-top: 40px; }
+
+.global-nav a:link {
+  color: white; }
+.global-nav a:visited {
+  color: white; }

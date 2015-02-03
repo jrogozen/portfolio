@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" ng-controller="headerCtrl">
   <section class="col-sm-12 col-md-8 header-content">
     <h1 class="depth" title="jonrogozen">jonrogozen</h1>
     <p class="header-intro">
@@ -10,12 +10,11 @@
       }
     </div>
     <nav class="small-margin header-nav">
-      <ul class="nav-list">
-        <li><a href="">about</a></li>
-        <li><a href="">portfolio</a></li>
-        <li><a href="">work</a></li>
-        <li><a href="">social</a></li>
-        <li><a href="">blog</a></li>
+      <ul class="nav-list global-nav">
+        <li><a href="#about" du-smooth-scroll>about</a></li>
+        <li><a href="#portfolio" du-smooth-scroll>portfolio</a></li>
+        <li><a href="#connect" du-smooth-scroll>connect</a></li>
+        <!-- <li><a class="reverse-link" href="">blog</a></li> -->
       </ul>
     </nav>
   </section>

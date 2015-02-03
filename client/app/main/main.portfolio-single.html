@@ -1,0 +1,21 @@
+<div class="portfolio">
+  <h1 class="double-border">Portfolio <small>(placeholder puppies :D)</small></h1>
+
+  <section class="portfolio-list">
+    <div class="row">
+      <aside class="col-sm-12 col-md-7">
+        <img class="img-full hover-gray" ng-src="{{site.img}}"/>
+      </aside>
+
+      <article class="col-sm-12 col-md-5">
+        <h1><a target="_blank" href="{{site.url || site.github}}">{{site.title}}</a></h1>
+        <p class="lead">{{site.keywods}}</p>
+        <p>{{site.description}}</p>
+        <ul class="nav-list medium-margin">
+          <li><a target="_blank" href="{{site.github}}"><i class="fa fa-github-alt fa-large"></i></a></li>
+          <li><a ui-sref="main.portfolio-list">back to portfolio</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</div>

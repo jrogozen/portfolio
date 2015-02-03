@@ -53,3 +53,25 @@
 .panel-colored {
   background: $off-white;
 }
+
+.img-full {
+  width: 100%;
+  height: auto;
+}
+
+.hover-gray {
+  transition: 0.5s;
+
+  &:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+}
+
+.reverse-link {
+  color: $pink;
+
+  &:hover {
+    color: white;
+  }
+}

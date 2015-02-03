@@ -11,5 +11,10 @@ app.config(['$stateProvider', function($stateProvider) {
       templateUrl: 'client/app/main/main.portfolio.html',
       controller: 'mainCtrl'
     })
+    .state('main.portfolio-single', {
+      url: "portfolio/:id",
+      templateUrl: 'client/app/main/main.portfolio-single.html',
+      controller: 'mainCtrl'
+    })
     ;
 }]);

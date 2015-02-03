@@ -9,6 +9,7 @@
   font-family: 'Merriweather', serif;
   font-size: 48px;
   font-weight: bold;
+  color: $pink;
 }
 
 .header-lead {
@@ -21,4 +22,19 @@
 .header-nav {
   font-style: italic;
   font-size: 18px;
+}
+
+.social-links {
+  margin-top: 40px;
+}
+
+.global-nav {
+  a {
+    &:link {
+      color: white;
+    }
+    &:visited {
+      color: white;
+    }
+  }
 }
