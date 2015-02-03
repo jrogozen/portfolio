@@ -162,7 +162,7 @@ a {
     color: white; }
 
 #header-main {
-  background-image: url("../../static/images/header_background.jpeg");
+  background-image: url("/static/images/header_background.jpeg");
   background-size: cover;
   color: white;
   padding: 40px 0; }
