@@ -32,18 +32,17 @@ gulp.task('inject', function() {
 });
 
 gulp.task('server', function() {
-  NODE_ENV = NODE_ENV || 'dev'
-  if (NODE_ENV === 'production') {
-    gulp.src('./')
-      .pipe(webserver({
-        host: 'jonrogozen.com'
-      }))
-  } else {
+  // if (NODE_ENV === 'production') {
+    // gulp.src('./')
+      // .pipe(webserver({
+        // host: 'jonrogozen.com'
+      // }))
+  // } else {
     gulp.src('./')
       .pipe(webserver({
         livereload: true
       }))
-  }
+  // }
 });
 
 gulp.task('watch', function() {
