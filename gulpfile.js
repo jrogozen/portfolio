@@ -32,6 +32,7 @@ gulp.task('inject', function() {
 });
 
 gulp.task('server', function() {
+  NODE_ENV = NODE_ENV || 'dev'
   if (NODE_ENV === 'production') {
     gulp.src('./')
       .pipe(webserver({
